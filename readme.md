@@ -1,6 +1,6 @@
 # Passport.js authentication for Apptrack
 
-[Passport](http://passportjs.org/) strategy for authenticating with [Apptrack](https://apptrack.io/) using the OAuth 2.0 API.
+[Passport](http://passportjs.org/) strategy for authenticating with [Apptrack](http://apptrack.io/) using the OAuth 2.0 API.
 
 This module lets you authenticate using Apptrack in your Node.js applications.
 
@@ -17,10 +17,12 @@ npm install passport-apptrack
 
 The Apptrack authentication strategy authenticates users using a Apptrack account and OAuth 2.0 tokens.  The strategy requires a `verify` callback, which accepts these credentials and calls `done` providing a user, as well as `options` specifying a client ID, client secret, and callback URL.
 ```
-passport.use(new ApptrackOAuth2Strategy({
+var OAuth2Strategy = require("passport-apptrack").Strategy;
+
+passport.use(new OAuth2Strategy({
 	clientID: CLIENT_ID,
 	clientSecret: CLIENT_SECRET,
-	callbackURL: "https://www.example.net/auth/apptrack/callback"
+	callbackURL: "http://www.example.net/auth/apptrack/callback"
 	},
 	function(accessToken, refreshToken, profile, done) {
 	User.findOrCreate({ providerId: profile.id }, function (err, user) {

@@ -2,12 +2,12 @@
 	"name": "passport-apptrack",
 	"version": "0.1.0",
 	"description": "OAuth2 client authentication for Apptrack using passport.js",
-	"keywords": ["apptrack", "passport", "oauth2", "auth", "authentication", "identity", "api", "json"],
 	"author": "kdi",
 	"contributors": [
 		{ "name": "Makis Tracend", "email": "makis@kdi.co" }
 	],
 	"homepage": "http://apptrack.io",
+	"keywords": ["apptrack", "passport", "oauth2", "auth", "authentication", "identity", "api", "json"],
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/apptrack/passport.git"
