@@ -1,6 +1,6 @@
 {
 	"name": "passport-apptrack",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "OAuth2 client authentication for Apptrack using passport.js",
 	"author": "kdi",
 	"contributors": [
